@@ -7,12 +7,12 @@
     <span>{{num1 + num2}}</span>
   </div>
   <div class="row second">
-    <p>My favorite language is</p>
     <select v-model="name">
       <option>Javasript</option>
       <option>Java</option>
       <option>Python</option>
       <option>Ruby</option>
     </select>
+    <p v-if="name"> My favorite language is {{name}}</p>
   </div>
 </div>
