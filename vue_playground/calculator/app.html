@@ -1,10 +1,14 @@
 <div id="app">
   <div class="row">
-    <input v-model="num1" type="number" />
-    <span>+</span>
-    <input v-model="num2" type="number" />
-    <span> = </span>
-    <span>{{num1 + num2}}</span>
+    <p>
+      <button @click="decrement">
+        -
+      </button>
+      {{counter}}
+      <button @click="increment">
+        +
+      </button>
+    </p>
   </div>
   <div class="row second">
     <select v-model="name">

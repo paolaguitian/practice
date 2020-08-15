@@ -1,9 +1,16 @@
 const App = {
   data() {
     return {
-      num1: 0,
-      num2: 0,
+      counter: 0,
       name: ''
+    }
+  },
+  methods: {
+    increment() {
+      this.counter++
+    },
+    decrement() {
+      this.counter--
     }
   }
 }
