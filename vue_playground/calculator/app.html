@@ -1,0 +1,18 @@
+<div id="app">
+  <div class="row">
+    <input v-model="num1" type="number" />
+    <span>+</span>
+    <input v-model="num2" type="number" />
+    <span> = </span>
+    <span>{{num1 + num2}}</span>
+  </div>
+  <div class="row second">
+    <p>My favorite language is</p>
+    <select v-model="name">
+      <option>Javasript</option>
+      <option>Java</option>
+      <option>Python</option>
+      <option>Ruby</option>
+    </select>
+  </div>
+</div>
