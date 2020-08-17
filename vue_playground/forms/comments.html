@@ -1,0 +1,8 @@
+<div id="comments">
+  <ul>
+    <li v-for="comment in comments">
+      {{ comment }}
+    </li>
+  </ul>
+  <input v-model="newComment" @keyup.enter="addComment" placeholder="Add a comment" />
+</div>
